@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/bt_ngaysinh"
+           android:text="01/01/2019"
+           android:textSize="20dp"
+           android:drawableEnd="@drawable/ic_arrow"
+           android:drawableRight="@drawable/ic_arrow" />
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:text="Đến"
+           android:textColor="@color/colorAccent"
+           android:textSize="13dp"
+           android:textStyle="bold"
+           android:gravity="center"/>
+
+       <Button
+           android:id="@+id/bt_homnay"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawableEnd="@drawable/ic_arrow"
+           android:drawableRight="@drawable/ic_arrow"
+           android:gravity="right"
+           android:text="01/01/2019"
+           android:textSize="20dp" />
+   </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/bt_tinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tính"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn đã sống được"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorred"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 năm | 0 tháng | 0 Ngày "
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorBlue"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+</LinearLayout>
